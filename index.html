@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>SnapPrint</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo"> <img src="assets/SnapPrintLogo.png" alt="SnapPrint" class="logo-img">
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Features">Features</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#footers">Contact</a></li>
+        
+      </ul>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/snapprinttt.png" alt="header" />
+      </div>
+      <div class="header__content">
+      
+        <h1>Makes printing quick and easy!</h1>
+        <p>
+          With a simple process and user friendly interface, SnapPrint enables efficient and accessible printing. 
+          Users can upload PDF files using a flash drive, Scan the QR from the kiosk , or upload via mobile app. And pay using coins, bills or thru gcash. 
+          It supports three paper tray sizes, eliminating the need to manually 
+          load paper.
+        </p>
+        <div class="header__btns">
+          <button class="btn" onclick="scrollToFooter()">Want to Avail?</button>
+          <a href="video.html">
+            <span><i class="ri-play-fill"></i></span>
+            Play Video
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container service__container" id="Features">
+      
+      <h2 class="section__header">Our Key Features</h2>
+      <div class="service__grid">
+        <div class="service__card">
+          <img src="assets/icon1.png" alt="service" />
+          <h4>Scan the QR</h4>
+          <p>
+            By scanning the QR code, you can quickly upload your PDF file and get it ready for print.
+          </p>
+        </div>
+        <div class="service__card">
+          <img src="assets/icon2.png" alt="service" />
+          <h4>Thru Flashdrive</h4>
+          <p>
+            Simply insert  your flash drive to upload your PDF file and print it instantly.
+          </p>
+        </div>
+        <div class="service__card">
+          <img src="assets/icon3.png" alt="service" />
+          <h4>Mobile Upload</h4>
+          <p>
+            Easily download the mobile app to upload your PDF file and print it with ease.
+          </p>
+        </div>
+        <div class="service__card">
+          <img src="assets/icon4.png" alt="service" />
+          <h4>Three Paper Tray</h4>
+          <p>
+            Supports three paper tray sizes: Long, Short, and A4, eliminating the need to manually load paper.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container destination__container" id="faqs">
+        <h2 class="section__header">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item" id="faq-item-1">
+                <button class="faq-btn" onclick="toggleFAQ(1)">
+                    <span class="faq-question">What is SnapPrint?</span>
+                    <svg id="icon-1" class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>SnapPrint is a self-service printing kiosk that allows users to print PDF documents conveniently. Users can upload files via a flash drive, Scan QR code, or mobile upload and pay using coins, paper bills or thru gcash.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-item-2">
+                <button class="faq-btn" onclick="toggleFAQ(2)">
+                    <span class="faq-question"> Where can I find a SnapPrint kiosk?</span>
+                    <svg id="icon-1" class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>SnapPrint kiosks are available in selected public areas where printing services are commonly needed.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-item-3">
+                <button class="faq-btn" onclick="toggleFAQ(3)">
+                    <span class="faq-question"> What types of documents can I print?</span>
+                    <svg id="icon-1" class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>SnapPrint only supports PDF format to ensure compatibility and proper document formatting.
+
+                    </p>
+                </div>
+            </div>
+
+          
+
+            
+            <div class="faq-item" id="faq-item-4">
+                <button class="faq-btn" onclick="toggleFAQ(4)">
+                    <span class="faq-question"> What paper sizes does SnapPrint support?</span>
+                    <svg id="icon-1" class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    <p>SnapPrint supports commonly used paper sizes, including Short (Letter), Long (Legal), and A4.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" id="faq-item-5">
+              <button class="faq-btn" onclick="toggleFAQ(5)">
+                  <span class="faq-question">Does SnapPrint offer color printing?</span>
+                  <svg id="icon-1" class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              <div class="faq-answer">
+                  <p>Yes, you can choose between color or grayscale printing based on your preference.</p>
+              </div>
+          </div>
+            <div class="faq-item" id="faq-item-6">
+              <button class="faq-btn" onclick="toggleFAQ(6)">
+                  <span class="faq-question">How much does printing cost?</span>
+                  <svg id="icon-1" class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              <div class="faq-answer">
+                  <p>The cost depends on the number of pages and whether you choose color or grayscale printing. Pricing details are displayed on the kiosk screen.</p>
+              </div>
+          </div>
+
+            <div class="faq-item" id="faq-item-7">
+              <button class="faq-btn" onclick="toggleFAQ(7)">
+                  <span class="faq-question">How do I avail SnapPrint?</span>
+                  <svg id="icon-1" class="faq-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              <div class="faq-answer">
+                  <p>For inquiries and assistance, please refer to the Contact section on this website for our official contact details.</p>
+              </div>
+          </div>
+
+
+        </div>
+    </section>
+    
+
+    <footer class="footer" id="footers">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo"><img src="assets/SnapPrintLogo.png" alt="SnapPrint" class="logo-img">
+            </a>
+          </div>
+          <p><br>
+            Offers an efficient and accessible solution for printing, focusing on document compatibility and simplifying the printing process through various file import methods.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Follow Us</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.facebook.com/share/1HJDTtJ8tF/">Facebook</a></li>
+           
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+639920103694">+639920103694</a></li>
+            <li>
+                <a href="mailto:snapprinttt@gmail.com">
+                  snapprinttt@gmail.com
+                </a>
+              </li>
+              
+        
+          
+          </ul>
+        </div>
+        <div class="footer__col">
+         
+            <h4>Download our App</h4>
+            <ul class="footer__links">
+              <li>
+                <a href="https://snapprintt-hkbsdyarheeedjc2.canadacentral-01.azurewebsites.net/" target="_blank" rel="noopener noreferrer">
+                  SnapPrint
+                </a>
+              </li>
+            </ul>
+            
+          
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+         © 2025 SnapPrint. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
